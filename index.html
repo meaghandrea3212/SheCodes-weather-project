@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a6d8c6ee5a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css" />
+    
   </head>
-  <body></body>
+  <div class="container">
+  <body>
+      <div class="citySearch">
+        <form id="city-search-form">
+          <input type="search" placeholder="Search Your City" id="search-text-input" />
+          <input type="submit"/> <button class="cityButton" id="city-button">Current city</button>
+         
+        </div>
+        </form>
+      <div class="card main">
+        <img src="images/sunshine.jpg" class="card-img-top"  alt="sunshine">
+        <h1 class="current-city" id = "current-city">
+        <i class="fas fa-cloud-sun"></i> Where are you?
+        <h2>
+      </h1>
+        <span class="currentDate" id ="date-slot">put the date here</span> <br/>
+        <span class="tempHead">Current Temperature</span><br />
+      </h2>
+      <p class="precipitation" id="daily-details">
+        <span class="temp" id ="temperature">88</span><span class="units"><a href="#" id = "farenheit-link">°F</a> | <a href="#" id="celcius-link">°C</a></span><br/>
+        <span id = "break-down">Bright and clear for the most part, clouds in some areas. Don't forget your sunblock!</span>
+      </p>
+      </div>
+      <div class="card fiveDay" style="width: 18rem;">
+        <div class="card-header"> Your Five Day Forecast </div>
+          
+      <ul class="list- group list-group-flush">
+        <li class="list-group-item">Friday <i class="fas fa-cloud-sun"></i> <br/><strong>92°</strong>/69° </li>
+        <li class="list-group-item">Saturday <i class="fas fa-cloud-sun"></i> <br/><strong>90°</strong>/67°</li>
+        <li class="list-group-item">Sunday <i class="fas fa-cloud-sun"></i><br/><strong>94°</strong>/71°</li>
+        <li class="list-group-item">Monday <i class="fas fa-exclamation-triangle"></i><br/><strong>95°</strong>/73°</li>
+        <li class="list-group-item">Tuesday <i class="fas fa-exclamation-triangle"></i> <br/><strong>95°</strong>/73°</li>
+        </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
