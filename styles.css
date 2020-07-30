@@ -1,0 +1,56 @@
+body {
+  font-family: "Comfortaa", cursive;
+}
+.container {
+  margin: 50px auto;
+  padding: 20px;
+}
+.citySearch {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.card {
+  text-align: center;
+  padding: 20px;
+  max-width: 50%;
+}
+.main {
+  float: left;
+}
+.fiveDay {
+  font-size: 20px;
+  float: right;
+}
+.list-group-item {
+  opacity: 0.8;
+}
+.list-group-item :hover {
+  cursor: pointer;
+  color: #f17808;
+}
+.temp {
+  font-size: 40px;
+}
+.units {
+  font-size: 35px;
+}
+.message {
+  color: #12947f;
+}
+.currentDate {
+  font-size: medium;
+}
+.tempHead {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.cityButton {
+  margin: 0;
+  border-style: outset;
+  border-radius: 3px;
+  border-width: 1x;
+  box-shadow: 0px;
+  padding: 1px, 6px;
+  font-size: medium;
+}
